@@ -1,7 +1,10 @@
-import React from "react";
+import RouteWrapper from "./RouteWrapper"
+import { RecoilRoot } from "recoil"
 
-const App = () => {
-  return <div>Hello Mouse</div>;
-};
-
-export default App;
+export default function App() {
+    return (
+        <RecoilRoot>
+            <RouteWrapper />
+        </RecoilRoot>
+    )
+}
